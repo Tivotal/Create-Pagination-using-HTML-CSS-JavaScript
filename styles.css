@@ -1,0 +1,76 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.container,
+.button,
+.links,
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  column-gap: 12px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .button {
+  border: none;
+}
+
+.container .button:disabled {
+  color: #b3b3b3;
+  pointer-events: none;
+}
+
+.container .button i {
+  pointer-events: none;
+}
+
+.container .button,
+.container .links .link {
+  height: 45px;
+  width: 45px;
+  font-size: 20px;
+  color: #666;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container .links {
+  column-gap: 12px;
+}
+
+.container .links .link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.container .links .link.active,
+.container .button:hover,
+.container .links .link:hover {
+  background: #4070f4;
+  color: #fff;
+}
